@@ -76,7 +76,7 @@ class Admin extends CI_Controller
 
     public function tangki_edit($id = FALSE)
     {
-        $data['judul'] = 'Edit Data Buku';
+        $data['judul'] = 'Edit Data Tangki';
         $data['page'] = 'buku_edit';
         $this->form_validation->set_rules(
             'id_buku',
@@ -88,7 +88,7 @@ class Admin extends CI_Controller
         $this->form_validation->set_rules('jenis_buku', 'Jenis Buku', 'required');
         $this->form_validation->set_rules('jumlah_isi', 'Jumlah Isi Buku', 'required');
 
-        $data['d'] = $this->m_umum->cari_data('buku', 'id_buku', $id);
+        $data['d'] = $this->m_umum->cari_data('tangki', 'id_tangki', $id);
 
         if ($this->form_validation->run() === FALSE) {
             $this->tampil($data);

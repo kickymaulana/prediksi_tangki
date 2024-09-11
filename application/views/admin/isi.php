@@ -113,15 +113,15 @@ else if ($page == 'buku') {
                     <?php
                         foreach ($buku as $d) { ?>
                     <tr>
-                        <td><?php echo $d['id_buku'] ?></td>
-                        <td><?php echo $d['nama_buku'] ?></td>
-                        <td><?php echo $d['jenis_buku'] ?></td>
+                        <td><?php echo $d['id_tangki'] ?></td>
+                        <td><?php echo $d['nama_tangki'] ?></td>
+                        <td><?php echo $d['jenis_tangki'] ?></td>
                         <td><?php echo $d['jumlah_isi'] ?></td>
                         <td>
-                            <a href=<?php echo base_url("admin/tangki_edit/") . $d['id_buku']; ?>> <i
+                            <a href=<?php echo base_url("admin/tangki_edit/") . $d['id_tangki']; ?>> <i
                                     class="fas fa-pencil-alt"></i> </a>
-                            <a href=<?php echo base_url("admin/tangki_hapus/") . $d['id_buku']; ?>
-                                onclick="return confirm('Yakin menghapus buku : <?php echo $d['id_buku']; ?> ?');" ;><i
+                            <a href=<?php echo base_url("admin/tangki_hapus/") . $d['id_tangki']; ?>
+                                onclick="return confirm('Yakin menghapus buku : <?php echo $d['id_tangki']; ?> ?');" ;><i
                                     class="fas fa-trash-alt"></i></a>
                         </td>
                     </tr>
@@ -211,14 +211,14 @@ else if ($page == 'buku_tambah') {
     <section class="content">
         <div class="card">
             <div class="card-body">
-                <form method="POST" action="<?php echo base_url('admin/tangki_edit/' . $d['id_buku']); ?>"
+                <form method="POST" action="<?php echo base_url('admin/tangki_edit/' . $d['id_tangki']); ?>"
                     class="form-horizontal">
                     <div class="card-body">
                         <div class="form-group row">
                             <label for="id_buku" class="col-sm-2 col-form-label">ID Tangki</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control" name="id_buku" id="id_buku"
-                                    value="<?php echo set_value('id_buku', $d['id_buku']); ?>"
+                                    value="<?php echo set_value('id_buku', $d['id_tangki']); ?>"
                                     placeholder="Masukkan Nama Buku">
                                 <span
                                     class="badge badge-warning"><?php echo strip_tags(form_error('id_buku')); ?></span>
@@ -228,7 +228,7 @@ else if ($page == 'buku_tambah') {
                             <label for="nama_buku" class="col-sm-2 col-form-label">Nama Tangki</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control" name="nama_buku" id="nama_buku"
-                                    value="<?php echo set_value('nama_buku', $d['nama_buku']); ?>"
+                                    value="<?php echo set_value('nama_buku', $d['nama_tangki']); ?>"
                                     placeholder="Masukkan Nama Buku">
                                 <span
                                     class="badge badge-warning"><?php echo strip_tags(form_error('nama_buku')); ?></span>
@@ -238,7 +238,7 @@ else if ($page == 'buku_tambah') {
                             <label for="jenis_buku" class="col-sm-2 col-form-label">Jenis Tangki</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control" name="jenis_buku" id="jenis_buku"
-                                    value="<?php echo set_value('jenis_buku', $d['jenis_buku']); ?>"
+                                    value="<?php echo set_value('jenis_buku', $d['jenis_tangki']); ?>"
                                     placeholder="Masukkan Jenis Buku">
                                 <span
                                     class="badge badge-warning"><?php echo strip_tags(form_error('jenis_buku')); ?></span>
@@ -257,7 +257,7 @@ else if ($page == 'buku_tambah') {
                     </div>
                     <div class="card-footer">
                         <button type="submit" class="btn btn-info">Simpan</button>
-                        <a class="btn btn-danger" href="<?php echo base_url('admin/buku'); ?>">
+                        <a class="btn btn-danger" href="<?php echo base_url('admin/tangki'); ?>">
                             Batal</a>
                     </div>
                 </form>

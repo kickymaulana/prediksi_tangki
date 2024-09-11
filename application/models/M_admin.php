@@ -11,7 +11,7 @@ class M_admin extends CI_Model
     public function dt_buku()
     {
         $this->db->select('*');
-        $this->db->from('buku');
+        $this->db->from('tangki');
         $query = $this->db->get();
         return $query->result_array();
     }
@@ -19,24 +19,24 @@ class M_admin extends CI_Model
     public function dt_buku_tambah()
     {
         $data = array(
-            'id_buku' => $this->input->post('id_buku'),
-            'nama_buku' => $this->input->post('nama_buku'),
-            'jenis_buku' => $this->input->post('jenis_buku'),
+            'id_tangki' => $this->input->post('id_buku'),
+            'nama_tangki' => $this->input->post('nama_buku'),
+            'jenis_tangki' => $this->input->post('jenis_buku'),
             'jumlah_isi' => $this->input->post('jumlah_isi')
         );
-        return $this->db->insert('buku', $data);
+        return $this->db->insert('tangki', $data);
     }
 
     public function dt_buku_edit($id)
     {
         $data = array(
-            'id_buku' => $this->input->post('id_buku'),
-            'nama_buku' => $this->input->post('nama_buku'),
-            'jenis_buku' => $this->input->post('jenis_buku'),
+            'id_tangki' => $this->input->post('id_buku'),
+            'nama_tangki' => $this->input->post('nama_buku'),
+            'jenis_tangki' => $this->input->post('jenis_buku'),
             'jumlah_isi' => $this->input->post('jumlah_isi')
         );
-        $this->db->where('id_buku', $id);
-        return $this->db->update('buku', $data);
+        $this->db->where('id_tangki', $id);
+        return $this->db->update('tangki', $data);
     }
 
     //  ============================== PRODUKSI ================================
