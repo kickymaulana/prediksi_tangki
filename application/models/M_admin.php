@@ -84,7 +84,7 @@ class M_admin extends CI_Model
         $this->db->select('*');
         $this->db->from('hasil_prediksi');
         $this->db->join('bulan', 'hasil_prediksi.id_bulan = bulan.id_bulan', 'left');
-        $this->db->join('tangki', 'hasil_prediksi.id_buku = tangki.id_tangki', 'left');
+        $this->db->join('tangki', 'hasil_prediksi.id_tangki = tangki.id_tangki', 'left');
         $query = $this->db->get();
         return $query->result_array();
     }
@@ -97,7 +97,7 @@ class M_admin extends CI_Model
     public function dt_prediksi_edit($id)
     {
         $data = array(
-            'id_buku' => $this->input->post('id_buku'),
+            'id_tangki' => $this->input->post('id_buku'),
             'id_bulan' => $this->input->post('id_bulan'),
             'tahun' => $this->input->post('tahun'),
             'permintaan' => $this->input->post('permintaan'),
@@ -158,7 +158,7 @@ class M_admin extends CI_Model
     {
         $this->db->select("MAX($kolom) as num");
         $this->db->from('data_produksi');
-        $this->db->where('id_buku', $id);
+        $this->db->where('id_tangki', $id);
         $query = $this->db->get();
         $result = $query->row();
         if (isset($result))
@@ -169,7 +169,7 @@ class M_admin extends CI_Model
     {
         $this->db->select("MIN($kolom) as num");
         $this->db->from('data_produksi');
-        $this->db->where('id_buku', $id);
+        $this->db->where('id_tangki', $id);
         $query = $this->db->get();
         $result = $query->row();
         if (isset($result))

@@ -322,7 +322,7 @@ class Admin extends CI_Controller
             // menyimpan data hasil prediksi ke dalam array
             $dataPrediksi = array(
                 'id_hasil_prediksi' => $this->input->post('id_hasil_prediksi', TRUE),
-                'id_buku' => $data['id_buku'],
+                'id_tangki' => $data['id_buku'],
                 'id_bulan' => $this->input->post('id_bulan', TRUE),
                 'tahun' => $this->input->post('tahun', TRUE),
                 'permintaan' => $data['post_permintaan'],
