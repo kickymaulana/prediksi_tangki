@@ -430,7 +430,7 @@ else if ($page == 'buku_tambah') {
                         <div class="form-group row">
                             <label for="id_buku" class="col-sm-2 col-form-label">Pilih Tangki</label>
                             <div class="col-sm-10">
-                                <?php echo form_dropdown('id_buku', $ddbuku, set_value('id_buku', $d['id_buku']), 'class=form-control'); ?>
+                                <?php echo form_dropdown('id_buku', $ddbuku, set_value('id_buku', $d['id_tangki']), 'class=form-control'); ?>
                                 <span
                                     class="badge badge-warning"><?php echo strip_tags(form_error('id_buku')); ?></span>
                             </div>

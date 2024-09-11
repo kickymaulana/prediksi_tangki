@@ -45,7 +45,7 @@ class M_admin extends CI_Model
         $this->db->select('*');
         $this->db->from('data_produksi');
         $this->db->join('bulan', 'data_produksi.id_bulan = bulan.id_bulan', 'left');
-        $this->db->join('tangki', 'data_produksi.id_buku = tangki.id_tangki', 'left');
+        $this->db->join('tangki', 'data_produksi.id_tangki = tangki.id_tangki', 'left');
         $query = $this->db->get();
         return $query->result_array();
     }
@@ -54,7 +54,7 @@ class M_admin extends CI_Model
     {
         $data = array(
             'id_produksi' => $this->input->post('id_produksi'),
-            'id_buku' => $this->input->post('id_buku'),
+            'id_tangki' => $this->input->post('id_buku'),
             'id_bulan' => $this->input->post('id_bulan'),
             'tahun' => $this->input->post('tahun'),
             'permintaan' => $this->input->post('permintaan'),
@@ -67,7 +67,7 @@ class M_admin extends CI_Model
     public function dt_produksi_edit($id)
     {
         $data = array(
-            'id_buku' => $this->input->post('id_buku'),
+            'id_tangki' => $this->input->post('id_buku'),
             'id_bulan' => $this->input->post('id_bulan'),
             'tahun' => $this->input->post('tahun'),
             'permintaan' => $this->input->post('permintaan'),
