@@ -303,7 +303,7 @@ else if ($page == 'buku_tambah') {
                             $i++ ?>
                     <tr>
                         <td><?php echo $i ?></td>
-                        <td><?php echo $d['nama_buku'] ?></td>
+                        <td><?php echo $d['nama_tangki'] ?></td>
                         <td><?php echo $d['nama_bulan'] ?></td>
                         <td><?php echo $d['tahun'] ?></td>
                         <td><?php echo $d['permintaan'] ?></td>

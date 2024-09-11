@@ -45,7 +45,7 @@ class M_admin extends CI_Model
         $this->db->select('*');
         $this->db->from('data_produksi');
         $this->db->join('bulan', 'data_produksi.id_bulan = bulan.id_bulan', 'left');
-        $this->db->join('buku', 'data_produksi.id_buku = buku.id_buku', 'left');
+        $this->db->join('tangki', 'data_produksi.id_buku = tangki.id_tangki', 'left');
         $query = $this->db->get();
         return $query->result_array();
     }
@@ -125,15 +125,15 @@ class M_admin extends CI_Model
     // ============================== DROPDOWN ===================================
     public function dropdown_buku()
     {
-        $query = $this->db->get('buku');
+        $query = $this->db->get('tangki');
         $result = $query->result();
 
         $id_buku = array('-Pilih-');
         $nama_buku = array('-Pilih-');
 
         for ($i = 0; $i < count($result); $i++) {
-            array_push($id_buku, $result[$i]->id_buku);
-            array_push($nama_buku, $result[$i]->nama_buku);
+            array_push($id_buku, $result[$i]->id_tangki);
+            array_push($nama_buku, $result[$i]->nama_tangki);
         }
         return array_combine($id_buku, $nama_buku);
     }
