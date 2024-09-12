@@ -24,7 +24,7 @@ if ($page == 'home') {
                         <div class="icon">
                             <i class="ion ion-bookmark"></i>
                         </div>
-                        <a href="<?php echo base_url('admin/tanki') ?>" class="small-box-footer">More info <i
+                        <a href="<?php echo base_url('admin/tangki') ?>" class="small-box-footer">More info <i
                                 class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
