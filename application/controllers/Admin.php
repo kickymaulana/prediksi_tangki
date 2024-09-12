@@ -22,7 +22,7 @@ class Admin extends CI_Controller
     {
         $data['judul']    = 'Sistem Prediksi Jumlah Produksi Tanki';
         $data['page']    = 'home';
-        $data['jml_buku']    = $this->m_umum->jumlah_record_tabel('buku');
+        $data['jml_buku']    = $this->m_umum->jumlah_record_tabel('tangki');
         $data['jml_prediksi']    = $this->m_umum->jumlah_record_tabel('hasil_prediksi');
         $this->tampil($data);
     }
