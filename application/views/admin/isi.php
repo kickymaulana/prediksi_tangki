@@ -344,7 +344,7 @@ else if ($page == 'buku_tambah') {
                 <form method="POST" action="<?php echo base_url('admin/produksi_tambah'); ?>" class="form-horizontal">
                     <div class="card-body">
                         <div class="form-group row">
-                            <label for="id_buku" class="col-sm-2 col-form-label">Pilih Buku</label>
+                            <label for="id_buku" class="col-sm-2 col-form-label">Pilih Tangki</label>
                             <div class="col-sm-10">
                                 <?php echo form_dropdown('id_buku', $ddbuku, set_value('id_buku')); ?>
                                 <span
