@@ -820,11 +820,11 @@ else if ($page == 'buku_tambah') {
                                         <table id="datatable_02" class="table table-bordered">
                                             <p><b>Fuzzifikasi</b></p>
                                             <tr>
-                                                <td>Sisa Stok Banyak</td>
+                                                <td>Persediaan awal Banyak</td>
                                                 <td><?php echo $d['sisa_banyak'] ?></td>
                                             </tr>
                                             <tr>
-                                                <td>Sisa Stok Sedikit</td>
+                                                <td>Persediaan awal Sedikit</td>
                                                 <td><?php echo $d['sisa_sedikit'] ?></td>
                                             </tr>
                                             <tr>
