@@ -369,7 +369,7 @@ class Admin extends CI_Controller
     public function prediksi_detil($id)
     {
         $data['judul'] = 'Detail Prediksi';
-        $data['subjudul'] = 'Perhitungan dengan Algoritma Fuzzy Logic Tsukamoto';
+        $data['subjudul'] = 'Perhitungan dengan Algoritma Fuzzy Logic Sugeno';
         $data['page'] = 'prediksi_detil';
 
         $data['d'] = $this->m_admin->dt_prediksi_detil($id);

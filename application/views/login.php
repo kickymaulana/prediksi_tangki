@@ -195,7 +195,7 @@
         <div class="logo">
             <img src="<?php echo base_url(); ?>assets/img/84penguin-logo.png" alt="buku">
             <p>SISTEM PREDIKSI JUMLAH PRODUKSI TANGKI</p>
-            <span>DENGAN ALGORITMA FUZZY LOGIC TSUKAMOTO</span>
+            <span>DENGAN ALGORITMA FUZZY LOGIC SUGENO</span>
         </div>
         <div class="login-form">
             <form action="<?php echo base_url("login"); ?>" method="post">

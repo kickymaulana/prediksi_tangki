@@ -245,7 +245,7 @@ else if ($page == 'buku_tambah') {
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="jumlah_isi" class="col-sm-2 col-form-label">Jumlah Isi (Lembar)</label>
+                            <label for="jumlah_isi" class="col-sm-2 col-form-label">Jumlah Isi (Liter)</label>
                             <div class="col-sm-10">
                                 <input type="number" class="form-control" name="jumlah_isi" id="jumlah_isi"
                                     value="<?php echo set_value('jumlah_isi', $d['jumlah_isi']); ?>"
