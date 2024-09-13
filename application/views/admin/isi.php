@@ -844,22 +844,22 @@ else if ($page == 'buku_tambah') {
                                             <p><b>Rules</b></p>
                                             <tr>
                                                 <td>R1</td>
-                                                <td>IF Sisa Stok BANYAK AND Permintaan NAIK THEN Produksi BERTAMBAH
+                                                <td>IF Persediaan awal BANYAK AND Permintaan NAIK THEN Produksi BERTAMBAH
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>R2</td>
-                                                <td>IF Sisa Stok SEDIKIT AND Permintaan NAIK THEN Produksi BERTAMBAH
+                                                <td>IF Persediaan awal SEDIKIT AND Permintaan NAIK THEN Produksi BERTAMBAH
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>R3</td>
-                                                <td>IF Sisa Stok BANYAK AND Permintaan TURUN THEN Produksi BERKURANG
+                                                <td>IF Persediaan awal BANYAK AND Permintaan TURUN THEN Produksi BERKURANG
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>R4</td>
-                                                <td>IF Sisa Stok SEDIKIT AND Permintaan TURUN THEN Produksi
+                                                <td>IF Persediaan awal SEDIKIT AND Permintaan TURUN THEN Produksi
                                                     BERKURANG</td>
                                             </tr>
                                         </table>
