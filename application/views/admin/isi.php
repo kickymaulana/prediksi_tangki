@@ -520,7 +520,7 @@ else if ($page == 'buku_tambah') {
                             <th>Bulan</th>
                             <th>Tahun</th>
                             <th>Permintaan</th>
-                            <th>Sisa Stok</th>
+                            <th>Persediaan awal</th>
                             <th>Produksi</th>
                             <th>Aksi</th>
                         </tr>
