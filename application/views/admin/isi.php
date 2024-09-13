@@ -748,7 +748,7 @@ else if ($page == 'buku_tambah') {
                                         <tr>
                                             <td>Nama Buku</td>
                                             <td><span class="tab"></span>:</td>
-                                            <td><?php echo $d['nama_buku'] ?></td>
+                                            <td><?php echo $d['nama_tangki'] ?></td>
                                         </tr>
                                         <tr>
                                             <td>Bulan </td>

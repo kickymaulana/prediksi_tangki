@@ -112,7 +112,7 @@ class M_admin extends CI_Model
     {
         $this->db->select('*');
         $this->db->from('hasil_prediksi');
-        $this->db->join('buku', 'hasil_prediksi.id_buku = buku.id_buku', 'left');
+        $this->db->join('tangki', 'hasil_prediksi.id_tangki = tangki.id_tangki', 'left');
         $this->db->join('bulan', 'hasil_prediksi.id_bulan = bulan.id_bulan', 'left');
         $this->db->join('data_fuzzy', 'hasil_prediksi.id_hasil_prediksi = data_fuzzy.id_hasil_prediksi', 'left');
         $this->db->where('hasil_prediksi.id_hasil_prediksi', $id);
