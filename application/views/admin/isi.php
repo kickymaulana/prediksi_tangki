@@ -770,11 +770,11 @@ else if ($page == 'buku_tambah') {
                                         <table id="datatable_02" class="table table-bordered">
                                             <p><b>Data Tertinggi dan Terendah</b></p>
                                             <tr>
-                                                <td>Sisa stok tertinggi</td>
+                                                <td>Persediaan awal tertinggi</td>
                                                 <td><?php echo $d['max_sisa'] ?></td>
                                             </tr>
                                             <tr>
-                                                <td>Sisa stok terendah</td>
+                                                <td>Persediaan awal terendah</td>
                                                 <td><?php echo $d['min_sisa'] ?></td>
                                             </tr>
                                             <tr>
@@ -802,7 +802,7 @@ else if ($page == 'buku_tambah') {
                                         <table id="datatable_02" class="table table-bordered">
                                             <p><b>Input Prediksi</b></p>
                                             <tr>
-                                                <td>Sisa stok</td>
+                                                <td>Persediaan awal</td>
                                                 <td><?php echo $d['new_sisa_stok'] ?></td>
                                             </tr>
                                             <tr>
