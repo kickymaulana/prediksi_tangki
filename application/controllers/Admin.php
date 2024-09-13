@@ -100,7 +100,7 @@ class Admin extends CI_Controller
 
     public function tangki_hapus($id)
     {
-        $this->m_umum->hapus_data('buku', 'id_buku', $id);
+        $this->m_umum->hapus_data('tangki', 'id_tangki', $id);
         redirect(base_url('admin/tangki'));
     }
 
